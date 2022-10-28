@@ -19,13 +19,7 @@ export const Section = () => {
                             )
                         })}
                     </div>
-                    <img src={"../img/pot.png"} alt="pot" className="w-40 h-40 absolute"></img>
-                    {/* <<div className="grid grid-cols-2 mr-10 absolute">
-                        <div className="1 w-20 h-20 bg-black"></div>
-                        <div className="2 w-20 h-20 bg-slate-800"></div>
-                        <div className="3 w-20 h-20 bg-zinc-600"></div>
-                        <div className="4 w-20 h-20 bg-stone-400"></div>
-                    </div>> */}
+                    <img src={require('../img/pot.png')} alt="pot" className="w-40 h-40 absolute"></img>
 
                     <div className="flex flex-col">
                         {soup.map((item, index) => {
