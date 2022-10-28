@@ -19,7 +19,7 @@ export const Section = () => {
                             )
                         })}
                     </div>
-                    <img src="../img/pot.jpg" alt="pot" className="w-40 h-40 absolute"></img>
+                    <img src={"../img/pot.png"} alt="pot" className="w-40 h-40 absolute"></img>
                     {/* <<div className="grid grid-cols-2 mr-10 absolute">
                         <div className="1 w-20 h-20 bg-black"></div>
                         <div className="2 w-20 h-20 bg-slate-800"></div>
