@@ -6,7 +6,8 @@ export const cartSlice = createSlice({
         totalCart: [],
         totalPrice: 0,
         soup: [],
-        toggleOrder: false
+        toggleOrder: false,
+        // toggleSoup: false,
     },
     reducers: {
         addCart: (state, action) => {
