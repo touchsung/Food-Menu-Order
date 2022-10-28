@@ -8,7 +8,7 @@ export const ListTotalCart = () => {
     const dispatch = useDispatch();
     // console.log(cart.totalCart);
 
-    return (cart.toggleSoup &&
+    return (
         <div>
             <h2 className="my-4 font-medium">Total Cart</h2>
             <hr />
