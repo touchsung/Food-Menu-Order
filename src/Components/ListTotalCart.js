@@ -12,7 +12,7 @@ export const ListTotalCart = () => {
         <div>
             <h2 className="my-4 font-medium">Total Cart</h2>
             <hr />
-            <ul className=" overflow-y-scroll h-[460px]">
+            <ul className=" overflow-y-scroll h-[400px]">
                 {cart.totalCart.map((item, index) => {
                     return (
                         <li key={index} className="flex items-center justify-between">
