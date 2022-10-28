@@ -21,7 +21,7 @@ const App = () => {
                         <Section />
                     </div>
                     <div className="col-span-3">
-                        {/* <TotalPrice /> */}
+                        <TotalPrice />
                         <ListMenu />
                     </div>
                 </div>
