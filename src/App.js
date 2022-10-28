@@ -1,12 +1,14 @@
 import React from "react";
 import { NavBar } from './Components/NavBar';
 import { Section } from './Components/Section';
-// import { Footer } from './Components/Footer';
+import { TotalOrder } from './Components/TotalOrder';
 import { CategoryMenu } from "./Components/CategoryMenu";
 import { ListMenu } from "./Components/ListMenu";
 import { TotalPrice } from "./Components/TotalPrice";
+import { useSelector } from "react-redux";
 
 const App = () => {
+    const toggleOrder = useSelector(state => state.cart.toggleOrder)
     return (
         <div className="flex items-center justify-center h-screen w-screen">
             <div className="w-[1024px] h-[768px] overflow-hidden relative bg-white outline outline-[1px]">
@@ -23,7 +25,7 @@ const App = () => {
                         <ListMenu />
                     </div>
                 </div>
-                {/* <Footer /> */}
+                {toggleOrder && <TotalOrder />}
             </div>
         </div>
     )

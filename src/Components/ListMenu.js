@@ -19,7 +19,7 @@ export const ListMenu = () => {
                                     {
                                         item.list.map((itemList, index) => {
                                             return (
-                                                <li key={index} className="flex justify-between items-center p-2 flex-col drop-shadow-md rounded-md bg-white text-center" onClick={() => dispatch(addCart({ name: itemList.name, price: 0, quantity: 1 }))
+                                                <li key={index} className="flex justify-between items-center p-2 flex-col drop-shadow-md rounded-md bg-white text-center" onClick={() => dispatch(addCart({ name: itemList.name, price: 0, quantity: 1, category: item.category, img: itemList.img }))
                                                 }>
                                                     <h3 className="text-black font-semibold text-sm h-[100%] flex items-center">{itemList.name}</h3>
                                                     <img src={itemList.img} alt={itemList.name} />
