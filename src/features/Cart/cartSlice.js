@@ -15,7 +15,6 @@ export const cartSlice = createSlice({
             const checkItemCart = state.totalCart.find(item => item.name === name)
             const itemIndex = state.totalCart.findIndex(item => item.name === name)
             if (category === 'Soup') {
-                console.log(state.soup.length);
                 if (state.soup.length < 4) {
                     state.soup.push(action.payload)
                 }
